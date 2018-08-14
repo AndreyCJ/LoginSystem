@@ -1,0 +1,261 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ------------------------------------------------------ */
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header{
+	display: flex;
+	max-width: 1800PX;
+	height: 72px;
+	align-items: center;
+	margin: auto;
+	/* padding-left: 60px;
+	padding-right: 60px; */
+}
+
+.bg{
+	background: #f1f1f1;
+	width: 100%;
+}
+
+#logo{
+	font-size: 24px;
+}
+
+#logo a{
+	color: #555;
+}
+
+header input{
+	padding: 10px 22px;
+	border: none;
+	background:transparent;
+	border-radius: 2px;
+	color: #4B8DF9;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+header input:hover{
+	background: #4B8DF9;
+	color: #ffffff;
+	transition: 0.2s;
+	border-bottom:none;
+}
+
+.spacer{
+	flex: 1;
+}
+
+.container{
+	max-width: 1800px;
+	margin: 45px auto;
+	/* border: 1px solid black; */
+}
+
+section#showcase{
+	display: flex;
+	justify-content: center;
+}
+
+section#showcase h1{
+	font-weight: 100;
+	font-size: 2em;
+	letter-spacing: 3px;
+	color: #555;
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: 45px auto;
+}
+
+form input{
+  margin: 10px;
+  padding: 10px;
+	font-size: 16px;
+	font-weight: 400;
+	border: none;
+	border-bottom: 2px solid #E0E0E0;
+}
+
+form input:focus{
+	border-bottom: 2px solid #3079ED;
+	transition: border 0.4s ease-in-out;
+	outline: none;
+}
+
+form input#reg{
+	background-color:#4B8DF9;
+	color: white;
+	border: 1px solid #3079ED;
+	font-size: 1em;
+	cursor: pointer;
+	padding: 11px;
+}
+
+.error {
+	padding: 10px; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+	margin-bottom: 20px;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	margin-bottom: 20px;
+}
+
+
+@media (max-width:425px){
+	header input{
+		padding: 20px;
+		border-radius: 0;
+		flex: 1;
+		background: #4B8DF9;
+		color: white;
+		font-weight: normal;
+	}
+
+	#logo{
+		flex: 1;
+		/* background: #000; */
+	}
+
+	section#showcase h1{
+		font-size: 1.5em;
+	}
+
+	header{
+		/* background: red; */
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.spacer{
+		flex: 0.5;
+	}
+
+}
+
+
+@media(max-width: 1800px){
+	header{
+		padding-left: 15px;
+	}
+
+	.container{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+}
+
