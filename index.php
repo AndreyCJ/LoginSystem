@@ -33,10 +33,8 @@
 
 		<?php if(isset($_SESSION['user_uid'])) : 	?>
 			<p>Добро пожаловать <strong><?echo $_SESSION['user_uid']?></strong></p>
-			<p><a href="index.php?logout='1'" style="color:red;">Logot</a></p>
 		<?php endif ?>
 
-	
 	</div>
 	
 <?php

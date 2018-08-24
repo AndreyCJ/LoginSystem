@@ -15,7 +15,11 @@
 		<header>
 				<div id="logo"><a href="index.php"><h1>Anchous</h1></a></div>
 				<div class="spacer"></div>
-				<a href="reg.php"><input type="submit" value="Sign up"></a>
-				<a href="login.php"><input type="submit" value="Sign in"></a>
+				<?php	if(isset($_SESSION['user_uid'])) : 	?>
+					<p><a href="index.php?logout='1'" style="color:red;">Logot</a></p>
+				<?php else : ?>
+					<a href="reg.php"><input type="submit" value="Sign up"></a>
+					<a href="login.php"><input type="submit" value="Sign in"></a>
+				<?php endif ?>
 		</header>
 	</div>
